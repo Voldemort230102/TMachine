@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>TMachine</title>
+    <title>TMachine/初中</title>
     <!--<link rel="icon" href="./img/Reason%20Creation%202.png">-->
     <link rel="icon" href="https://livefile.xesimg.com/programme/python_assets/457664b8506c5df538ba5e681ec550bf.png">
     <!--<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>-->
-    <script src="./js/anime.min.js"></script>
+    <script src="../js/anime.min.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -169,7 +169,7 @@
         }
     </style>
     <script>
-        let lst = ['home', 'join', 'join_rc', 'members', 'about', 'project'];
+        let lst = ['home', 'members', 'about', 'member_one','member_one_ljz'];
         function $(id)
         {
             return document.getElementById(id);
@@ -177,14 +177,6 @@
         function switchtb(tb)
         {
             let i = 0;
-            for (;i<=lock_lst.length-1;i++)
-            {
-                if (document.getElementById(lock_lst[i]) != null)
-                {
-                    $(lock_lst[i]).style = "display: none;";
-                }
-            }
-            i = 0;
             for (;i<=lst.length-1;i++)
             {
                 if (lst[i] == tb)
@@ -210,7 +202,7 @@
 <div class="topnav" style="font-size: 0.9em;">
     <a href="javascript:void(0);" onclick="switchtb('home');">首页</a>
     <a href="javascript:void(0);" onclick="switchtb('members');">名单</a>
-    <a href="javascript:void(0);" onclick="switchtb('about');">关于我们</a>
+    <a href="javascript:void(0);" onclick="switchtb('about');">关于</a>
 </div>
 
 <!--首页-->
@@ -220,10 +212,8 @@
             <h2>TMachine</h2>
             <p>谢铭：<a href="https://github.com" target="_blank">Github</a></p>
             <p class="center-red-text">hello~</p>
-            <center>
-                <!--<img src="./img/Reason%20Creation%201.png" width="300" height="300" alt="Reason Creation Logo">-->
-                <img src="https://livefile.xesimg.com/programme/python_assets/d230afa64053c45f5849c8bbfbd6521e.png" width="300" height="300" alt="Reason Creation Logo">
-            </center>
+            <p class="center-red-text">为即将结束的初中生活去画一个句号……</p>
+            <p class="center-red-text">我们于xxxx年入学</p>
         </div>
     </div>
 </div>
@@ -235,27 +225,67 @@
             <p><font color="white">点击标签查看详情</font></p>
         </div>
         <div class="row">
-            <div class="card" onclick="switchtb('member_cm');" style="padding: 5px 18px;">
-                <h2>沧溟</h2>
-                <p>统帅/创始人</p>
+            <div class="card" onclick="switchtb('member_one');" style="padding: 5px 18px;">
+                <h2>一班</h2>
+                <p>大本营</p>
+            </div>
+            <div class="card" onclick="switchtb('member_two');" style="padding: 5px 18px;">
+                <h2>二班</h2>
+                <p>临班</p>
+            </div>
+            <div class="card" onclick="switchtb('member_three');" style="padding: 5px 18px;">
+                <h2>三班</h2>
+                <p>临班</p>
+            </div>
+            <div class="card" onclick="switchtb('member_four');" style="padding: 5px 18px;">
+                <h2>四班</h2>
+                <p>临班</p>
+            </div>
+            <div class="card" onclick="switchtb('member_five');" style="padding: 5px 18px;">
+                <h2>五班</h2>
+                <p>临班</p>
+            </div>
+            <div class="card" onclick="switchtb('member_six');" style="padding: 5px 18px;">
+                <h2>六班</h2>
+                <p>临班</p>
+            </div>
+            <div class="card" onclick="switchtb('member_seven');" style="padding: 5px 18px;">
+                <h2>七班</h2>
+                <p>临班</p>
             </div>
             <div class="card" style="padding: 5px 20px;">
-                <h2>以上是全部成员</h2>
-                <p>截至目前，我们有5人</p>
+                <h2>以上是全部班级</h2>
+                <p>我们共有7个班级</p>
             </div>
         </div>
     </div>
 </div>
-<!--cm简介-->
-<div class="row" id="member_cm" style="display: none;">
+
+<!--one-->
+<div class="row" id="member_one" style="display: none;">
     <div class="leftcolumn" style="display: inline-block;">
         <div class="topnav" style="font-size: 0.9em;">
             <a href="javascript:void(0);" onclick="switchtb('members');">返回上一级</a>
         </div>
+        <div class="card" onclick="switchtb('member_one_ljz');" style="padding: 5px 18px;">
+            <h2>栾金泽</h2>
+            <p>鸡哥</p>
+        </div>
+        <div class="card" style="padding: 5px 20px;">
+            <h2>以上是一班全部成员</h2>
+            <p>累计统计，我们共有46人</p>
+        </div>
+    </div>
+</div>
+<!--ljz简介-->
+<div class="row" id="member_one_ljz" style="display: none;">
+    <div class="leftcolumn" style="display: inline-block;">
+        <div class="topnav" style="font-size: 0.9em;">
+            <a href="javascript:void(0);" onclick="switchtb('member_one');">返回上一级</a>
+        </div>
         <div class="card2">
-            <h2>沧溟</h2>
-            <p>涅槃重生！！！</p>
-            <p>不用模糊不清的正义，度量不可度量的人心</p>
+            <h2>栾金泽</h2>
+            <p>xxxxx</p>
         </div>
     </div>
 </div>
@@ -265,6 +295,7 @@
     <div class="leftcolumn" style="display: inline-block;">
         <div class="card2">
             <p style="text-align: center; font-size: 35px;">关于TMachine/初中</p>
+            <p style="text-align: center; font-size: 20px;">TMachine/初中 建立于2024年12月22日</p>
         </div>
     </div>
 </div>
