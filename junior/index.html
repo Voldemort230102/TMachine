@@ -170,13 +170,13 @@
     </style>
     <script>
         let lst = ['home', 'members', 'about',
-            'member_one','member_one_ljz',
-            'member_two',
-            'member_three',
-            'member_four',
-            'member_five',
-            'member_six',
-            'member_seven'
+            'member_1','member_1_1','member_1_2',
+            'member_2',
+            'member_3',
+            'member_4',
+            'member_5',
+            'member_6',
+            'member_7'
         ];
         function $(id)
         {
@@ -237,31 +237,31 @@
             <p><font color="white">点击标签查看详情</font></p>
         </div>
         <div class="row">
-            <div class="card" onclick="switchtb('member_one');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_1');" style="padding: 5px 18px;">
                 <h2>一班</h2>
                 <p>大本营</p>
             </div>
-            <div class="card" onclick="switchtb('member_two');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_2');" style="padding: 5px 18px;">
                 <h2>二班</h2>
                 <p>临班</p>
             </div>
-            <div class="card" onclick="switchtb('member_three');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_3');" style="padding: 5px 18px;">
                 <h2>三班</h2>
                 <p>菜碟教的班</p>
             </div>
-            <div class="card" onclick="switchtb('member_four');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_4');" style="padding: 5px 18px;">
                 <h2>四班</h2>
                 <p>Dog</p>
             </div>
-            <div class="card" onclick="switchtb('member_five');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_5');" style="padding: 5px 18px;">
                 <h2>五班</h2>
                 <p>……</p>
             </div>
-            <div class="card" onclick="switchtb('member_six');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_6');" style="padding: 5px 18px;">
                 <h2>六班</h2>
                 <p>……</p>
             </div>
-            <div class="card" onclick="switchtb('member_seven');" style="padding: 5px 18px;">
+            <div class="card" onclick="switchtb('member_7');" style="padding: 5px 18px;">
                 <h2>七班</h2>
                 <p>……</p>
             </div>
@@ -273,34 +273,55 @@
     </div>
 </div>
 
-<!--one-->
-<div class="row" id="member_one" style="display: none;">
+<!--1-->
+<div class="row" id="member_1" style="display: none;">
     <div class="leftcolumn" style="display: inline-block;">
         <div class="topnav" style="font-size: 0.9em;">
             <a href="javascript:void(0);" onclick="switchtb('members');">返回上一级</a>
         </div>
-        <div class="card" onclick="switchtb('member_one_ljz');" style="padding: 5px 18px;">
-            <h2>栾金泽</h2>
-            <p>鸡哥</p>
-        </div>
-        <div class="card" style="padding: 5px 20px;">
-            <h2>以上是一班全部成员</h2>
-            <p>累计统计，我们共有46人</p>
+        <div class="row">
+            <div class="card" onclick="switchtb('member_1_1');" style="padding: 5px 18px;">
+                <h2>栾金泽</h2>
+                <p>1号</p>
+            </div>
+            <div class="card" onclick="switchtb('member_1_2');" style="padding: 5px 18px;">
+                <h2>邵帅然</h2>
+                <p>2号</p>
+            </div>
+            <div class="card" style="padding: 5px 20px;">
+                <h2>以上是一班全部成员</h2>
+                <p>累计统计，我们共有46人</p>
+            </div>
         </div>
     </div>
 </div>
-<!--ljz简介-->
-<div class="row" id="member_one_ljz" style="display: none;">
+<!--1_1-->
+<div class="row" id="member_1_1" style="display: none;">
     <div class="leftcolumn" style="display: inline-block;">
         <div class="topnav" style="font-size: 0.9em;">
-            <a href="javascript:void(0);" onclick="switchtb('member_one');">返回上一级</a>
+            <a href="javascript:void(0);" onclick="switchtb('member_1');">返回上一级</a>
         </div>
         <div class="card2">
             <h2>栾金泽</h2>
             <p>性别：男</p>
             <p>绰号：鸡哥、纯情男初</p>
             <p>职位：副班长、语文课代表</p>
-            <a href="https://voldemort230102.github.io/TMachine/junior/member_one_ljz" target="_blank">点击查看他的故事</a>
+            <a href="https://voldemort230102.github.io/TMachine/junior/member_1_1" target="_blank">点击查看他的故事</a>
+        </div>
+    </div>
+</div>
+<!--1_2-->
+<div class="row" id="member_1_2" style="display: none;">
+    <div class="leftcolumn" style="display: inline-block;">
+        <div class="topnav" style="font-size: 0.9em;">
+            <a href="javascript:void(0);" onclick="switchtb('member_1');">返回上一级</a>
+        </div>
+        <div class="card2">
+            <h2>邵帅然</h2>
+            <p>性别：男</p>
+            <p>绰号：……</p>
+            <p>职位：英语课代表</p>
+            <p>暂无故事</p>
         </div>
     </div>
 </div>
@@ -315,7 +336,7 @@
             <p style="text-align: center; font-size: 20px;">结构：</p>
             <p style="text-align: left; font-size: 20px;">
                 TMachine/初中　─┬─ 首页 ─── 作者寄语<br>
-                　　　　　　　　 ├─ 名单 ─┬─ 一班 ─── <a href="https://voldemort230102.github.io/TMachine/junior/member_one_ljz" target="_blank">栾金泽</a><br>
+                　　　　　　　　 ├─ 名单 ─┬─ 一班 ─── <a href="https://voldemort230102.github.io/TMachine/junior/member_1_1" target="_blank">栾金泽</a><br>
                 　　　　　　　　 │　　　　├─ 二班 ─── 人员<br>
                 　　　　　　　　 │　　　　├─ 三班 ─── 人员<br>
                 　　　　　　　　 │　　　　├─ 四班 ─── 人员<br>
