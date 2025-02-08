@@ -119,13 +119,6 @@
             max-width: 100%;
             height: auto;
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
         @media screen and (max-width: 800px) {
             .leftcolumn, .rightcolumn {
                 flex: 100%;
@@ -158,14 +151,23 @@
             align-items: center;
             cursor: pointer;
         }
-        .fireworks {
-            position: absolute;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
         body{
             font-size: 1.35em;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
         }
     </style>
     <script>
@@ -191,7 +193,7 @@
         }
     </script>
 </head>
-<body>
+<body class="container">
 <!--大标题-->
 <div class="header">
     <h1>TMachine</h1>
@@ -247,6 +249,7 @@
 </div>
 
 <!--页足-->
+<div class="content"></div>
 <footer class="footer">
     <p>&copy; Reason Creation. All rights reserved.</p>
 </footer>
